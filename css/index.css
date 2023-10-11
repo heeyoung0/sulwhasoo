@@ -1,0 +1,701 @@
+@charset "utf-8";
+@import url('font.css');
+
+
+html {font-size: 0.625rem;}
+body {font: 1.6rem 'Noto Sans KR', sans-serif; color: #222; }
+
+/* 공통 */
+/* #wrap {overflow: hidden;} */
+header {/* color: #fff; */}
+#wrap .inner {width: 100%; margin: 0 auto;}
+.inner.main {transition: all 0.4s; height: 150px;}
+.inner.main:hover {background: #fff; z-index: -1;}
+#wrap .contetns {max-width: 1440px; margin: 0 auto;}
+:root {--swiper-navigation-size: 20px;
+}
+/* 공통 */
+#lang-modal {display: none;}
+.reactive-menu {display: none;}
+.mainSilde {
+    position: relative;
+}
+.mainSilde > .swiper-pagination {display: none;}
+.swiper-wrapper.banner .swiper-slide {
+    background: transparent;
+    /* overflow: hidden; */
+    height: 680px;
+    background: url(../img/sulbaaner1.jpg) no-repeat center/cover;
+}
+.mainSilde > .swiper-button-next {
+    padding: 20px;
+    background: rgba(255,255,255,0.2);
+    color: #212121;
+}
+.mainSilde > .swiper-button-prev {
+    padding: 20px;
+    color: #212121;
+    background: rgba(255,255,255,0.2);
+}
+.swiper-wrapper .swiper-slide.bg2 {
+    background-image: url(../img/sulbaaner2.jpg);
+}
+.swiper-wrapper .swiper-slide.bg3 {
+    background-image: url(../img/sulbaaner3.jpg);
+}
+.swiper-wrapper .swiper-slide.bg4 {
+    background-image: url(../img/sulbaaner4.jpg);
+}
+.swiper-wrapper .swiper-slide.bg5 {
+    background-image: url(../img/sulbaaner5.jpg);
+}
+.swiper-wrapper .swiper-slide.bg6 {
+    background-image: url(../img/sulbaaner6.jpg);
+}
+.swiper-wrapper .swiper-slide > .inner {
+    position: absolute;
+    left: 232px; bottom: 0;
+    color: #fff;
+    font-weight: 300;
+    text-shadow: 1px 1px 7px rgba(0,0,0,0.4);
+    padding-bottom: 3.125em;
+}
+.swiper-wrapper .swiper-slide > .inner span {
+    font-size: 1.8rem;
+}
+.swiper-wrapper .swiper-slide > .inner p {
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+/* swiper */
+
+.mainSilde {
+    position: relative;
+}
+#wrap .inner.main {
+    position: absolute;
+    color: #fff;
+    z-index: 2;
+    top: 0; left: 0;
+    /* border-bottom: 1px solid #e9e9e944; */
+}
+/* top_header */
+.top_header {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    height: 80px;
+}
+.top_header .top_logo {
+    position: absolute;
+    width: 166px; height: 40px;
+    top: 50%; left: 50%;
+    transform: translateX(-50%);
+    background: url(../img/sulwhitelogo.png) no-repeat center/contain;
+    z-index: 5;
+}
+.top_header .sub_header .left_lang {
+    position: absolute;
+    left: 0; top: 25%;
+}
+.top_header .sub_header .left_lang > a {position: relative;}
+.top_header .sub_header .left_lang > a:before {
+    content: '';
+    position: absolute;
+    width: 14px; height: 8px;
+    right: -25%; top: 38%;
+    background: url(../img/sul-white-arr-b.png) no-repeat center/cover;
+}
+.top_header .sub_header .hide {
+    position: relative;
+}
+.top_header .sub_header .hide figure{
+    position: absolute;
+    display: none;
+}
+.top_header .sub_header .hide figure img {
+    width: 1.875em;
+    
+}
+.top_header .sub_header .right_store {
+    position: absolute;
+    right: 0; top: 25%;
+}
+/* top_header */
+
+/* sub_header */
+.sub_header .right_store span {
+    display: inline-block;
+    padding: 0 0.813em;
+}
+.sub_header .right_store .hide1 {display: none;}
+.sub_header .right_store .blind {display: block;}
+.sub_header .right_store .blind:before {
+    content: '';
+    position: absolute;
+    width: 18px; height: 18px;
+    right: -15%; top: 25%;
+    background: url(../img/sul-white-search.png) no-repeat center/contain;
+}
+.sub_header .left_lang {
+    position: relative;
+    z-index: 100;
+}
+.sub_header .left_lang .lang_menu {
+    font-size: 1.3rem;
+    color: #111;
+    font-weight: 300;
+    background: #fff;
+    text-align: left;
+    border: 1px solid #000;
+    position: absolute;
+    z-index: 100;
+    display: none;
+    margin-top: 5px;
+    width: 250px;
+}
+.sub_header .left_lang .lang_menu li:hover {
+    background: rgba(0,0,0,0.08)
+}
+.sub_header .left_lang .lang_menu li a {
+    display: inline-block;
+    padding: 0.769em;
+}
+/* sub_header */
+
+/* gnb */
+.gnb {
+    position: relative;
+    width: 800px;
+    height: 100%;
+    top: 25px; left: 35%;
+    overflow: hidden;
+}
+.main-menu > li {
+    float: left;
+    margin: 0 20px;
+    display: block;
+}
+.main-text {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.main-text:before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #111;
+    bottom: -5px; left: 0;
+    z-index: 100;
+}
+.main-text:hover:before{
+    width: 100%;
+    transition: all 0.3s;
+}
+.hide-menu {
+    width: 100%;
+    display: none;
+}
+.hide-menu .sub-text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    float: left;
+    left: 0; top: 0;
+    z-index: 5;
+    display: block;
+}
+.hide-menu .sub-text a {
+    color: #666;
+}
+.hide-menu .sub-text a:hover{
+    color: #111;
+    font-weight: 600;
+}
+.hide-menu .sub-text strong {
+    color: #111;
+    font-weight: 500;
+}
+.hide-menu.about li a {
+    line-height: 30px;
+}
+.hide-menu-bg {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    top: 150px; left: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+.hide-menu.care {
+    height: 60px;
+}
+.hide-menu.spa{
+    height: 60px;
+}
+.hide-menu.store {
+    height: 60px;
+}
+.hide-menu.about {
+    height: 130px;
+}
+.hide-menu .sub-text.care {
+    top: 60px; left: 200px;
+}
+.hide-menu .sub-text.spa {
+    top: 60px; left: 230px;
+}
+.hide-menu .sub-text.store {
+    top: 60px; left: 210px;
+}
+.hide-menu .sub-text.about1 {
+    top: 60px; left: 0;
+}
+.hide-menu.about .sub-text.about2 {
+    top: 60px; left: 183px;
+}
+.hide-menu.about .sub-text.about3 {
+    top: 60px; left: 366px;
+}
+.hide-menu.about .sub-text.about4 {
+    top: 60px; left: 550px;
+}
+.hide-menu .sub-text a {
+    margin-right: 20px;
+}
+.hide-menu.about .sub-text a {
+    display: block;
+}
+/* gnb */
+.inner.main:hover .left_lang {
+    color: #111
+}
+.inner.main:hover .left_lang a:before {
+    background-image: url(../img/sul-black-arr-b.png);
+    /* transform: rotate(180deg); */
+}
+.inner.main:hover .top_logo {
+    background-image: url(../img/sul-orange-logo.png);
+}
+.inner.main:hover .right_store {
+    color: #111;
+}
+.inner.main:hover .right_store .blind:before {
+    background-image: url(../img/search-black.png);
+}
+.inner.main:hover .gnb ul li {
+    color: #111;
+}
+/* header hover */
+.choice {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.choice h2 {
+    margin: 150px 0 20px 0;
+    font-size: 28px;
+    color: #111;
+    font-weight: 500;
+}
+/* choice slide */
+.choiceBanner{
+    height: 620px
+}
+.choiceBanner > .swiper-pagination {
+    display: none;
+}
+.choiceBanner > .swiper-button-next {
+    color: #212121;
+}
+.choiceBanner > .swiper-button-prev {
+    color: #212121;
+}
+.choiceBanner .swiper-button-next {
+    top: 40%;
+}
+.choiceBanner .swiper-button-prev {
+    top: 41%;
+}
+.cosChoice {
+    position: relative;
+}
+.cho_inner {
+    width: 100%;
+    height: 100%;
+}
+.cho_inner a {
+    height: 100%;
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: -100%; left: 50%;
+    transform: translateX(-50%);
+    
+}
+.cho_inner .name {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #000;
+    padding-top: 0.87em;
+    box-sizing: border-box;
+}
+.cho_inner .nameEng {
+    font-size: 1.5rem;
+    color: #666;
+    font-weight: 300;
+    margin: 0.533em 0;
+    width: 500px;
+}
+.cho_inner .price {
+    color: #000;
+}
+.cho_inner em {
+    display: block;
+    width: 500px;
+    font-size: 1.5rem;
+    color: #666;
+    font-weight: 300;
+    margin: 0.533em 0;
+}
+.swiper-wrapper.cosChoice .swiper-slide {
+    /* width: 500px; */
+    height: 500px;
+    background: url(../img/Cleansing-Oil.jpg) no-repeat center/cover;
+}
+.swiper-wrapper.cosChoice .swiper-slide.ch1 {
+    background-image: url(../img/Cleansing-Oil.jpg);
+}
+.swiper-wrapper .swiper-slide.ch2 {
+    background-image: url(../img/Cleansing-Foam.jpg);
+}
+.swiper-wrapper .swiper-slide.ch3 {
+    background-image: url(../img/Refining-Mask.jpg);
+}
+.swiper-wrapper .swiper-slide.ch4 {
+    background-image: url(../img/Activating-Serum-VI.jpg);
+}
+.swiper-wrapper .swiper-slide.ch5 {
+    background-image: url(../img/Renewing-Cream-EX.jpg);
+}
+.swiper-wrapper .swiper-slide.ch6 {
+    background-image: url(../img/Renewing-Serum-EX.jpg);
+}
+
+/* choicebanner */
+.best_click {
+    position: relative;
+    display: block;
+    background: url(../img/sulbestseller-pc.jpg) no-repeat center/contain;
+    height: 540px;
+    margin-top: 250px;
+}
+.best_click .text {
+    position: absolute;
+    bottom: 10%; left: 20%;
+}
+.best_click .text > p {
+    font-size: 32px;
+    font-weight: 500;
+}
+.best_click .text > .long_text {
+    display: block;
+    font-size: 18px;
+    color: #666;
+    font-weight: 300;
+    margin: 10px 0 25px 0;
+}
+.best_click .text > .box { 
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+/* best_click */
+.season .contetns {max-width: 1440px; margin: 0 auto;}
+.season h2 {
+    padding-top: 100px;
+    font-size: 28px;
+    font-weight: 600;
+}
+.season_img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    text-align: center;
+}
+.season_img a {
+    display: block;
+}
+.season_item {
+    margin-right: 18px;
+}
+.season_item:last-child {
+    margin-right: 0;
+}
+.season_img .season_item.hide {display: none;}
+.serum {
+    background: #ededed;
+    width: 340px;
+    height: 520px;
+}
+.serum .img_area {
+    width: 315px;
+    height: 315px;
+    background: url(../img/sul-ginseng-serum.png) no-repeat center/cover;
+}
+.big_item {
+    width: 720px;
+    height: 520px;
+    height: 520px;
+    background: url(../img/sul-ginseng-duo-pc.jpg) no-repeat center/cover;
+}
+.cream {
+    background: #ededed;
+    width: 340px;
+    height: 520px;
+}
+.cream .img_area {
+    width: 315px;
+    height: 315px;
+    background: url(../img/sul-ginseng-cream.png) no-repeat center/cover;
+}
+.text_area p {
+    margin-bottom: 8px;
+}
+.text_area .name {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+}
+.text_area .nameEng {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(136,136,136);
+}
+.text_area .price {
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+}
+.season_item .text_area {
+    margin-top: 80px;
+}
+.big_item .text_area .name {
+    font-size: 24px;
+}
+.big_item .text_area {
+    text-align: left;
+    margin: 390px 0 0 100px;
+}
+/* season */
+.flagship {
+    margin-top: 200px;
+}
+.flagship_store {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.flagship_store figure {
+    width: 100%;
+}
+.flagship_store figure img {
+    width: 100%;
+}
+.flagship_store .bukchon {
+    margin-right: 20px;
+}
+.flagship_store p {
+    font-size: 28px;
+    color: #111;
+    margin: 20px 0;
+    font-weight: 500;
+}
+.flagship_store span {
+    display: inline-block;
+    font-size: 14px;
+    color: #111;
+    border: 1px solid #000;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+.flagship_store span:hover {
+    background: #111;
+    color: #fff;
+}
+/* flagship */
+.influencer {max-width: 1440px; margin: 150px auto 0;}
+.influencer h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #000;
+    font-weight: 600;
+}
+.influencer a {
+    cursor: url(../img/curser_serch.webp) 1 1, auto;
+}
+.instaBanner {
+    max-width: 1440px;
+    height: 310px;
+}
+.instaBanner > .swiper-pagination {
+    display: none;
+}
+.instaBanner > .swiper-button-next {
+    padding: 20px;
+    background: rgba(255,255,255,0.2);
+    color: #212121;
+}
+.instaBanner > .swiper-button-prev {
+    padding: 20px;
+    color: #212121;
+    background: rgba(255,255,255,0.2);
+}
+.instaBanner .swiper-slide img {
+    width: 301px;
+}
+.swiper-wrapper.influ .swiper-slide {
+    position: relative;
+    max-width: 301px;
+    height: 301px;
+    background: url(../img/sul-influencer1.jpg) no-repeat center/cover; 
+    transition: all 0.3s linear;
+    /* overflow: hidden; */
+}
+.swiper-wrapper.influ .swiper-slide.insta2 {
+    background-image: url(../img/influencer2.jpg);
+}
+.swiper-wrapper.influ .swiper-slide.insta3 {
+    background-image: url(../img/influencer3.jpg);
+}
+.swiper-wrapper.influ .swiper-slide.insta4 {
+    background-image: url(../img/influencer4.jpg);
+}
+.swiper-wrapper.influ .swiper-slide.insta5 {
+    background-image: url(../img/influencer5.jpg);
+}
+.swiper-wrapper.influ .swiper-slide.insta6 {
+    background-image: url(../img/influencer6.jpg);
+}
+.swiper-wrapper.influ .swiper-slide.insta7 {
+    background-image: url(../img/influencer7_1.jpg);
+}
+.swiper-wrapper.influ .swiper-slide.insta8 {
+    background-image: url(../img/influencer8.jpg);
+}
+.swiper-wrapper.influ .swiper-slide.insta9 {
+    background-image: url(../img/influencer9.jpg);
+}
+.swiper-wrapper.influ .swiper-slide.insta10 {
+    background-image: url(../img/AnyConv.com__influencer10.jpg);
+}
+.swiper-wrapper.influ .swiper-slide .inner_text {
+    text-align: center;
+    position: absolute;
+    font-size: 13px;
+    color: #333;
+    bottom: 0;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding: 0 3px;
+    box-sizing: border-box;
+    background: #fff;
+    line-height: 30px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
+    display: block;
+    transition: all 0.3s ease-out;
+    bottom: 105%; height: 29%;
+    width: 100%;
+    z-index: 100;
+}
+.swiper-wrapper.influ .swiper-slide:hover .inner_text {
+    display: block !important;
+    bottom: -5px !important;
+}
+.swiper-wrapper.influ .swiper-slide:hover {
+    transform: scale(1.05);
+}
+/* influ */
+footer {
+    margin-top: 100px;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+footer .contents {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.t_footer {
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: center;
+}
+.t_footer .textArea {
+    /* float: left; */
+}
+.t_footer .textArea ul li {
+    font-size: 13px;
+    float: left;
+    box-sizing: border-box;
+    color: #c6c5c5;
+}
+.t_footer .textArea ul li a {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0 15px;
+    color: #555;
+}
+.t_footer .textArea ul li strong {
+    font-weight: 500;
+}
+.t_footer .textArea ul li:last-child:before {
+    display: none;
+}
+.t_footer .snsArea {
+    float: right;
+    margin-left: 30px;
+}
+.t_footer .snsArea a {
+    display: inline-block;
+    margin: 0 5px;
+}
+.t_footer .snsArea .web img {
+    width: 42px;
+}
+/* t_footer */
+.b_footer {
+    max-width: 1100px;
+    position: relative;
+}
+.hide-info i {
+    display: none;
+}
+.b_footer .hideArea {
+    padding: 20px 0; box-sizing: border-box;
+}
+.b_footer p {
+    margin-left: 32px;
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.b_footer .copy {
+    color: #767676;
+    font-size: 13px;
+}
+.b_footer .copy span {
+    font-weight: 500;
+}
+.b_footer .b_footer_hide {display: none;}

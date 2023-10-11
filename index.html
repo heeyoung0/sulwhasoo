@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설화, 다시 피어나다. Sulwhasoo Rebloom | 설화수 한국</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width: 769px) and (max-width: 1023px)">
+    <link rel="stylesheet" href="css/mobile.css" media="all and (max-width: 768px)">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- swiper js -->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="reactive-menu">
+                <div class="top-logo">
+                    <a href="index.html"></a>
+                    <i class="close"></i>
+                </div>
+                <div class="reactive-gnb">
+                    <ul>
+                        <li>
+                            <a href="#">윤조</a>
+                        </li>
+                        <li>
+                            <a href="#">자음생</a>
+                        </li>
+                        <li>
+                            <a href="#">진설</a>
+                        </li>
+                        <li>
+                            <a href="#">기프트</a>
+                        </li>
+                        <li>
+                            <a href="#" class="plus-btn">제품
+                                <i class="nav-ico"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">스킨케어</a>
+                                </li>
+                                <li>
+                                    <a href="#">메이크업</a>
+                                </li>
+                                <li>
+                                    <a href="#">남성</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="plus-btn">스파
+                                <i class="nav-ico"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">스파 프로그램</a>
+                                </li>
+                                <li>
+                                    <a href="#">예약</a>
+                                </li>
+                                <li>
+                                    <a href="#">매장 찾기</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="plus-btn">플래그십 스토어
+                                <i class="nav-ico"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">플래그십 스토어</a>
+                                </li>
+                                <li>
+                                    <a href="#">설화수 북촌</a>
+                                </li>
+                                <li>
+                                    <a href="#">설화수 도산</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="plus-btn">ABOUT 설화수
+                                <i class="nav-ico"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">브랜드 스토리</a>
+                                </li>
+                                <li>
+                                    <a href="#">브랜드 엠버서더</a>
+                                </li>
+                                <li>
+                                    <a href="#">ART</a>
+                                </li>
+                                <li>
+                                    <a href="#">HERITAGE</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reactive-b">
+                    <div class="user">
+                        <p>
+                            <a href="#" class="login">로그인</a>
+                        </p>
+                        <p>
+                            <a href="#" class="store">매장찾기</a>
+                        </p>
+                    </div>
+                    <div class="lang-area">
+                        <span class="lang">LANGUAGE</span>
+                        <span class="lang-text">한국/한국어</span>
+                        <i id="langBtn"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="lang-modal">
+                <div class="top-text">
+                    <h2>언어 선택</h2>
+                    <i id="closeBtn"></i>
+                </div>
+                <div class="lang-text-area">
+                    <ul class="lang-text">
+                        <li class="lang-choice">
+                            <a href="#">한국/한국어</a>
+                            <i class="check-ico"></i>
+                        </li>
+                        <li>
+                            <a href="#">INTERNATIONAL/ENGLISH</a>
+                        </li>
+                        <li>
+                            <a href="#">中国大陆/中文</a>
+                        </li>
+                        <li>
+                            <a href="#">中國香港/繁體中文</a>
+                        </li>
+                        <li>
+                            <a href="#">SINGAPORE/ENGLISH</a>
+                        </li>
+                        <li>
+                            <a href="#">MALAYSIA/ENGLISH</a>
+                        </li>
+                        <li>
+                            <a href="#">Việt Nam/Tiếng Việt</a>
+                        </li>
+                        <li>
+                            <a href="#">INDONESIA/BAHASA INDONESIA</a>
+                        </li>
+                        <li>
+                            <a href="#">ประเทศไทย/ไทย</a>
+                        </li>
+                        <li>
+                            <a href="#">USA/ENGLISH</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inner main">
+                <div class="top_header">
+                    <div class="top_logo">
+                        <a href="#" class="blind">logo</a>
+                    </div>
+                    <div class="sub_header">
+                        <div class="hide">
+                            <figure>
+                                <img src="img/menu-white.png" alt="메뉴">
+                            </figure>
+                        </div>
+                        <div class="left_lang">
+                            <a href="#"><span>한국/한국어</span></a>
+                            <ul class="lang_menu">
+                                    <li><a href="#">한국/한국어</a></li>
+                                    <li><a href="#">INTERNATIONAL/ENGLISH</a></li>
+                                    <li><a href="#">中国大陆/中文</a></li>
+                                    <li><a href="#">中國香港/繁體中文</a></li>
+                                    <li><a href="#">SINGAPORE/ENGLISH</a></li>
+                                    <li><a href="#">MALAYSIA/ENGLISH</a></li>
+                                    <li><a href="#">Việt Nam/Tiếng Việt</a></li>
+                                    <li><a href="#">INDONESIA/BAHASA INDONESIA</a></li>
+                                    <li><a href="#">ประเทศไทย/ไทย</a></li>
+                                    <li><a href="#">USA/ENGLISH</a></li>
+                            </ul>
+                        </div>
+                        <div class="right_store">
+                            <a href="#" class="hide"><span>매장찾기</span> | <span>구매하기</span> |</a>
+                            <span class="blind">serch</span>
+                        </div>
+                    </div>
+                    <!-- sub_header -->
+                </div>
+                <!-- top_header -->
+                <div class="gnb hide">
+                    <ul class="main-menu">
+                        <li class="gnb-top">
+                            <a href="#" class="main-text">윤조</a>
+                        </li>
+                        <li class="gnb-top">
+                            <a href="#" class="main-text">자음생</a>
+                        </li>
+                        <li class="gnb-top">
+                            <a href="#" class="main-text">베스트</a>
+                        </li>
+                        <li class="gnb-top">
+                            <a href="#" class="main-text">제품
+                                <ul class="hide-menu care">
+                                    <li class="sub-text care">
+                                        <a href="#">스킨케어</a>
+                                        <a href="#">메이크업</a>
+                                        <a href="#">남성</a>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="gnb-top">
+                            <a href="#" class="main-text">스파
+                                <ul class="hide-menu spa">
+                                    <li class="sub-text spa">
+                                        <a href="#">소개</a>
+                                        <a href="#">스파 프로그램</a>
+                                        <a href="#">예약</a>
+                                        <a href="#">매장 찾기</a>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="gnb-top"> 
+                            <a href="#" class="main-text">플래그십 스토어
+                                <ul class="hide-menu store">
+                                    <li class="sub-text store">
+                                        <a href="#">플래그십 스토어</a>
+                                        <a href="#">설화수 북촌</a>
+                                        <a href="#">설화수 도산</a>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="gnb-top">
+                            <a href="#" class="main-text">ABOUT 설화수
+                                    <ul class="hide-menu about">
+                                        <li class="sub-text about1">
+                                            <a href="#">
+                                                <strong>브랜드 스토리</strong>
+                                            </a>
+                                            <a href="#">
+                                                <span>브랜드 빌리프</span>
+                                            </a>
+                                            <a href="#">
+                                                <span>브랜드 캠페인</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-text about2">
+                                            <a href="#">
+                                                <strong>브랜드 엠버서더</strong>
+                                            </a>
+                                            <a href="#">
+                                                <span>로제</span>
+                                            </a>
+                                            <a href="#">
+                                                <span>틸다 스윈튼</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-text about3">
+                                            <a href="#">
+                                                <strong>ART</strong>
+                                            </a>
+                                            <a href="#">
+                                                <span>MET</span>
+                                            </a>
+                                            <a href="#">
+                                                <span>설화문화전</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-text about4">
+                                            <a href="#">
+                                                <strong>HERITAGE</strong>
+                                            </a>
+                                            <a href="#">
+                                                <span>SINCE 1932</span>
+                                            </a>
+                                            <a href="#">
+                                                <span>명작컬렉션</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- reactive-menu -->
+                <div class="hide-menu-bg"></div>
+            </div>
+            <div class="swiper mainSilde">
+                <div class="swiper-wrapper banner">
+                    <div class="swiper-slide bg1">
+                        <div class="inner">
+                            <span>THE ULTIMATE S CREAM</span>
+                            <p>NEW 진설크림</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg2">
+                        <div class="inner">
+                            <span>First Care Activating Mask</span>
+                            <p>NEW 윤조마스크</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg3">
+                        <div class="inner">
+                            <span>NEW BRAND FILM</span>
+                            <p>인삼, 아름다움 그리고 설화수</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg4">
+                        <div class="inner">
+                            <span>NEW GLOBAL AMBASSADOR</span>
+                            <p>설화수, 그리고 TILDA</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg5">
+                        <div class="inner">
+                            <span>Sulwhasoo Flagship Store</span>
+                            <p>ROSÉ in BUKCHON</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg6">
+                        <div class="inner">
+                            <span>SULWHASOO FIRST CARE ACTIVATING SERUM VI</span>
+                            <p>윤조에센스 6세대</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- swiper -->
+            
+        </header>
+
+        <section class="choice">
+            <div class="inner">
+                <h2>설화수 추천</h2>
+                <!-- swiper -->
+                <div class="swiper choiceBanner">
+                    <div class="swiper-wrapper cosChoice">
+                        <div class="swiper-slide ch1">
+                            <div class="cho_inner">
+                                <a href="#">
+                                    <p class="name">순행클렌징오일</p>
+                                    <p class="nameEng">Gentle Cleansing Oil</p>
+                                    <p class="price">47,000원</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ch2">
+                            <div class="cho_inner">
+                                <a href="#">
+                                    <p class="name">순행클렌징폼</p>
+                                    <p class="nameEng">Gentle Cleansing Foam</p>
+                                    <p class="price">42,000원</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ch3">
+                            <div class="cho_inner">
+                                <a href="#">
+                                    <p class="name">백삼팩</p>
+                                    <p class="nameEng">White Ginseng Reaiance Refining Mask</p>
+                                    <p class="price">72,000원</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ch4">
+                            <div class="cho_inner">
+                                <a href="#">
+                                    <p class="name">윤조에센스 6세대</p>
+                                    <p class="nameEng">First Care Activating Serum VI</p>
+                                    <p class="price">140,000원</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ch5">
+                            <div class="cho_inner">
+                                <a href="#">
+                                    <p class="name">자음생크림</p>
+                                    <p class="nameEng">Concentrated Ginseng Renewing Cream EX</p>
+                                    <p class="price">270,000원</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ch6">
+                            <div class="cho_inner">
+                                <a href="#">
+                                    <p class="name">자음생세럼</p>
+                                    <em>Concentrated Ginseng Renewing Serum EX</em>
+                                    <p class="price">220,000원</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    </div>
+                
+            </div>
+        </section>
+        <!-- choice -->
+        <section class="bestseller">
+            <div class="inner">
+                <a href="#" class="best_click">
+                    <div class="text">
+                        <p>베스트 셀러</p>
+                        <span class="long_text">건강하게 빛나고 힘 있게 채우는 <br>
+                        설화수의 시그니처 케어</span>
+                        <span class="box">자세히 보기</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- bestseller -->
+        <section class="season">
+            <div class="contetns">
+                <h2>설화수 시즌추천</h2>
+                <div class="season_img">
+                    <div class="season_item big_item hide">
+                        <div class="text_area">
+                            <p class="name">자음생 듀오</p>
+                            <p class="nameEng">안티에이징의 결정체, 진세노믹스™ <br>자음생듀오로 피부 자생력을 키워주세요.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="season_item serum">
+                        <div class="img_area"></div>
+                        <div class="text_area">
+                            <p class="name">자음생세럼</p>
+                            <p class="nameEng">Concentrated Ginseng Renewing Serum EX</p>
+                            <p class="price">220,000원</p>
+                        </div>
+                    </a>
+                    <div class="season_item big_item hide1">
+                        <div class="text_area">
+                            <p class="name">자음생 듀오</p>
+                            <p class="nameEng">안티에이징의 결정체, 진세노믹스™ <br>자음생듀오로 피부 자생력을 키워주세요.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="season_item cream">
+                        <div class="img_area"></div>
+                        <div class="text_area">
+                            <p class="name">자음생크림</p>
+                            <p class="nameEng">Concentrated Ginseng Renewing Cream EX</p>
+                            <p class="price">270,000원</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- season -->
+        <section class="flagship">
+            <div class="contents">
+                <div class="flagship_store">
+                    <a href="#">
+                        <div class="bukchon">
+                            <figure><img src="img/sul-bukchon.jpg" alt="북촌 플래그십 스토어"></figure>
+                            <p class="store_text">설화수 북촌 플래그십 스토어</p>
+                            <span class="box">자세히 보기</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="dosan">
+                            <figure><img src="img/sul-Dosan.jpg" alt="도산 플래그십 스토어"></figure>
+                            <p class="store_text">설화수 도산 플래그십 스토어</p>
+                            <span class="box">자세히 보기</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- flagship -->
+        <section class="influencer">
+            <a href="#">
+                <div class="contents">
+                    <h2>#With Sulwhasoo</h2>
+                    <div class="swiper instaBanner">
+                        <div class="swiper-wrapper influ">
+                            <div class="swiper-slide insta1">
+                                <div class="inner_text">
+                                    <p>@0_dew</p>
+                                    <p>#유료광고 sulwhasoo.official 점점 뜨거워지는 날</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide insta2">
+                                <div class="inner_text">
+                                    <p>@0_dew</p>
+                                    <p>#유료광고 sulwhasoo.official 점점 뜨거워지는 날</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide insta3">
+                                <div class="inner_text">
+                                    <p>@kkyeongeun_</p>
+                                    <p>#유료광고 sulwhasoo.official 점점 뜨거워지는 햇살</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide insta4">
+                                <div class="inner_text">
+                                    <p>@kkyeongeun_</p>
+                                    <p>#유료광고 sulwhasoo.official 점점 뜨거워지는 햇살</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide insta5">
+                                <div class="inner_text">
+                                    <p>@kkyeongeun_</p>
+                                    <p>#유료광고 sulwhasoo.official 점점 뜨거워지는 햇살</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide insta6">
+                                <div class="inner_text">
+                                    <p>@mimi__hye</p>
+                                    <p>#광고 "그 시절 우리가 사랑했던 유행화장" 신라면세점</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide insta7">
+                                <div class="inner_text">
+                                    <p>@juhee_honggg</p>
+                                    <p>🌿 * 🤍.•💛피부 더 좋아졌다는 얘기를 잔뜩 듣는 나의 요즈음</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide insta8">
+                                <div class="inner_text">
+                                    <p>@juhee_honggg</p>
+                                    <p>🌿 * 🤍.•💛피부 더 좋아졌다는 얘기를 잔뜩 듣는 나의 요즈음</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide insta9">
+                                <div class="inner_text">
+                                    <p>@juhee_honggg</p>
+                                    <p>🌿 * 🤍.•💛피부 더 좋아졌다는 얘기를 잔뜩 듣는 나의 요즈음</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide insta10">
+                                <div class="inner_text">
+                                    <p>@juhee_honggg</p>
+                                    <p>🌿 * 🤍.•💛피부 더 좋아졌다는 얘기를 잔뜩 듣는 나의 요즈음</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </a>
+        </section>
+        <!-- influencer -->
+        <footer>
+            <div class="contents">
+                <div class="t_footer clear">
+                    <div class="textArea hide">
+                        <ul>
+                            <li><a href="#">회사소개</a> |</li>
+                            <li><a href="#">서비스이용약관</a> |</li>
+                            <li><a href="#">UGC이용약관</a> |</li>
+                            <li><a href="#"><strong>개인정보처리방침</strong></a> |</li>
+                            <li><a href="#">영상정보처리방침</a> |</li>
+                            <li><a href="#">사이트맵</a> |</li>
+                            <li><a href="#">로그인</a></li>
+                        </ul>
+                    </div>
+                    <div class="snsArea">
+                        <a href="#" class="web"><img src="img/web-accessibility.png" alt="웹 접근성 인증 마크"></a>
+                        <a href="#"><img src="img/facebook.png" alt="페이스북"></a>
+                        <a href="#"><img src="img/instagram.png" alt="인스타그램"></a>
+                        <a href="#"><img src="img/youtube.png" alt="유튜브"></a>
+                        <a href="#"><img src="img/kakaoChannel.png" alt="카카오채널"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>  
+                <!-- t_footer -->
+                <div class="b_footer">
+                    <div class="hide-info">
+                        <i class="footer-toggle" title="정보 더보기"></i>
+                    </div>
+                    <div class="hideArea">
+                        <p class="hide">고객서비스센터(수신자요금부담) : 080-023-5454 (월~금: AM 09:00~PM 06:00)</p>
+                        <p class="copy">&copy; <span>AMOREPACIFIC</span> CORPORATION. All rights reserved.</p>
+                    </div>
+                    <div class="b_footer_hide">
+                        <ul class="clear">
+                            <li><a href="#">회사소개</a> |</li>
+                            <li><a href="#">서비스이용약관</a> |</li>
+                            <li><a href="#">UGC이용약관</a> |</li>
+                            <li><a href="#"><strong>개인정보처리방침</strong></a> |</li>
+                            <li><a href="#">영상정보처리방침</a> |</li>
+                            <li><a href="#">사이트맵</a> |</li>
+                            <li><a href="#">로그인</a></li>
+                        </ul>
+                        <p class="b_footer_hide_cs">고객서비스센터(수신자요금부담) : 080-023-5454 (월~금: AM 09:00~PM 06:00)</p>
+                    </div>
+                </div>
+    </div>
+    <!-- wrap -->
+    <script>
+        
+        var swiper = new Swiper(".mainSilde", {
+            pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false // 쓸어 넘기거나 버튼 클릭 시 자동 슬라이드 정지.
+            },
+            loop: true,
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+        
+        var swiper = new Swiper(".choiceBanner", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+            }}
+    });
+
+    function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+        return direction;
+    }
+
+    var swiper = new Swiper(".instaBanner", {
+        spaceBetween: 20,
+        slidesPerView: 4,
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        },
+        history: {
+        key: "slide",
+        },
+    });
+    </script>
+</body>
+</html>
