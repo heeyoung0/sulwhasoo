@@ -1,5 +1,12 @@
 
 $(function(){
+    $('#scroll-top').on('click', function() {
+        $('html, body').animate({
+            scrollTop:0
+        },400)
+        return false;
+    })
+
     $('.left_lang > a').on('click', function(){
         $('.lang_menu').stop().slideDown(400);
     });
@@ -29,11 +36,6 @@ $(function(){
         $(this).parent('.plus-btn').siblings('.sub-menu').slideToggle(300)
     })
     
-    /* let ul = $(this).closest('ul');
-    // 현재 선택된 ul 인덱스 외의 모든 ul의 하위 .span_m 메뉴는 숨김처리
-    $('.reactive-gnb .sub-menu:not(:eq(' + ul.index() + ')) .sub-menu').hide();
-    // 현재 선택된 ul 인덱스의 하위 .span_m 메뉴는 보여주게 처리
-    $('.reactive-gnb .sub-menu:eq(' + ul.index() + ') .sub-menu').show(); */
     $('.hide figure').on('click', function() {
         $('.reactive-menu').animate({'left':'0'},300)
     })
